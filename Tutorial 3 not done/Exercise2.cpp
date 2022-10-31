@@ -3,8 +3,9 @@
 
 using namespace std;
 
-struct Student
+class Student
 {
+public:
     int id;
     string name;
     string faculty;
@@ -33,21 +34,27 @@ void readBinary()
 int main()
 {
     Student tcp1201[5];
+    
     tcp1201[0].id = 1;
     tcp1201[0].name = "Alex";
     tcp1201[0].faculty = "FOE";
+
     tcp1201[1].id = 2;
     tcp1201[1].name = "Mary";
     tcp1201[1].faculty = "FCI";
+
     tcp1201[2].id = 3;
     tcp1201[2].name = "Choi";
     tcp1201[2].faculty = "FOE";
+    
     tcp1201[3].id = 4;
     tcp1201[3].name = "Wong";
     tcp1201[3].faculty = "FCI";
+    
     tcp1201[4].id = 5;
     tcp1201[4].name = "Pang";
     tcp1201[4].faculty = "FOE";
+    
     writeBinary(tcp1201, 5);
     readBinary();
 
@@ -57,9 +64,9 @@ int main()
     // (2) Change the definition struct student to class student and alter the
     // rest of the program so that the program will compile and generate the
     // same output.
+    //-> Change struct to class and make the class public
    
     // (3) Add code to the end of the program to read and print out the 3rd element
     // in the file directly and without reading the whole file.
-
     return 0;
 }
