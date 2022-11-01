@@ -64,12 +64,18 @@ int main()
     tcp1201[4].faculty = "FCM";
     
     // (8) Print out only those objects with field member faculty equal to “FCI”.
-    
+    for (int i=0; i<sizeof(tcp1201)/sizeof(Student);i++)
+    {
+        if (tcp1201[i].faculty=="FCI")
+            {cout<<tcp1201[i].id<<" "<<tcp1201[i].name<<" "<<tcp1201[i].faculty<<endl;}
+    }
     
     // (9) Change the definition of the Student to become a class rather than
     // struct. Recompile the program and explain what is wrong.
+    // -> can't compile
     
     // (10) Is struct and class are the same?
+    // struct is public by default. class is private by default
 
 return 0;
 }

@@ -27,7 +27,7 @@ public:
 
     string getFaculty();
 
-}
+};
     // 6) Change step 2 and step 3 to have the accessors and mutators written
     // outside the class. The class should contain only prototypes of these
     // methods.

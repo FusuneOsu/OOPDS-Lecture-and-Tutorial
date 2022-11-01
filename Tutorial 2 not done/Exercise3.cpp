@@ -3,19 +3,22 @@
 using namespace std;
 int main()
 {
-    char arr[] = "This is a null terminated string";
+    char *arr="This is a null terminated string";
     cout << arr << endl;
     cout << sizeof(arr) << endl;
     cout << sizeof(char) << endl;
     cout << strlen(arr) << endl;
 
     // (1) Explain the difference between sizeof() and strlen() in the above program.
+    // sizeof = only prints out specific datatype size
+    // strlen = prints the entire size
 
     // (2) Explain the relationship between strlen() and the formula sizeof(arr)/sizeof(char).
+    //cout << sizeof(arr)/sizeof(char) <<"," <<strlen(arr);
 
     // (3) Add the following 2 lines of code to the program then compile and run the program.
-    // arr[2] = 'X';
-    // cout << arr << endl;
+    arr[2] = 'X';
+    cout << arr << endl;
 
     // (4) Replace the line then compile and run the program.
     //      char arr[]="This is a null terminated string";
