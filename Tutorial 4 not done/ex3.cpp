@@ -8,10 +8,11 @@ class Shape
 
 public:
     Shape();
-    Shape(int x, int y);
+    Shape(int x, int y); //x and y are formal arguements or parameters
     ~Shape();
     static int getNumObj();
 };
+
 Shape::Shape() { numObjects++; }
 Shape::Shape(int x, int y) : x(x), y(y)
 {
@@ -34,12 +35,18 @@ int main()
     cout << Shape::getNumObj() << endl;
 
     // 1) Study the above program and discuss the static keyword used.
+    // no static = instance variable 
+    // with static = class variable
+
     // 2) Explain why we need the static keyword and the line (int
     // Shape::numObjects = 0;).
+
     // 3) Can we use the object name when accessing the method (getNumObj())
     // rather than the class name.
+
     // 4) If we remove the static word from the declaration of the method
     // (getNumObj()), can we invoke the method using the class name?
+
     // 5) Define a unique_ptr to a Shape object. Display numObjects created. Does
     // it increment numObjects? Create an object and assign it to uptr using
     // make_unique. Does this increment numObjects?
