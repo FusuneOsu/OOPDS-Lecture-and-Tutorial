@@ -3,6 +3,7 @@
 #include <ctime>
 #include <cstdlib>
 using namespace std;
+
 class Student
 {
 private:
@@ -39,6 +40,9 @@ private:
   int size;
   Student *subjList;
 
+  // (2) Add a parametrized constructor to the class Subject that will receive
+  // an int size and creates an array of Students of size (size) using the
+  // fill method.
   void fill() {
     for (int i = 0; i < size; i++) {
       subjList[i].setId(rand() % 10 + 1);
@@ -56,6 +60,8 @@ public:
     fill();
   }
 
+  // (4) Add a method to the class Subject to sort the array subjList in
+  // ascending order based on student’s age.
   void sortAge() {
 
     for (int i = 0; i < size - 1; i++) {
@@ -77,6 +83,9 @@ public:
     }
   }
 
+  // (5) Add a method to the class Subject to search the array subjList for a
+  // given student id. The method should list all the students with the same
+  // id equal to id.
   void search(int id) {
     for (int j = 0; j < size; j++) {
       if (id == subjList[j].getId()) {
@@ -87,6 +96,8 @@ public:
     }
   }
 
+  // (3) Add a display method to the class Subject to display the elements of
+    // the array subjList.
   void display(){
     for (int j = 0; j < size; j++) {
         cout << subjList[j].getId() << ":" 
@@ -95,6 +106,8 @@ public:
     }
   }
 
+  // (6) Add destructors to the above two classes to display messages that
+  // objects were destroyed.
   ~Subject() {
     if (subjList != nullptr)
       delete[] subjList;
@@ -118,27 +131,10 @@ int main()
 
     // (1) Compile the program and study the errors. You are not allowed to alter
     // the main program during this exercise.
-
-    // (2) Add a parametrized constructor to the class Subject that will receive
-    // an int size and creates an array of Students of size (size) using the
-    // fill method.
-
-    // (3) Add a display method to the class Subject to display the elements of
-    // the array subjList.
-
-    // (4) Add a method to the class Subject to sort the array subjList in
-    // ascending order based on student’s age.
-
-    // (5) Add a method to the class Subject to search the array subjList for a
-    // given student id. The method should list all the students with the same
-    // id equal to id.
-
-    // (6) Add destructors to the above two classes to display messages that
-    // objects were destroyed.
-
+    
     // (7) Add messages to the constructors of both classes displaying that the
     // objects were created.
-
+  
     // (8) Study the sequence of creation and destruction of objects.
 
     // (9) Is there any memory leak in this example
