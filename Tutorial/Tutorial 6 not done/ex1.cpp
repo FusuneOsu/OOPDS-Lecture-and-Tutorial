@@ -27,9 +27,21 @@ int main()
     // 1) In the main function create 2 objects c1 with the values (3,4) and c2
     // with the values (5,6). Then create 2 other objects c3 and c4 without
     // any initial values.
+    Coordinates c1,c2,c3,c4;
+
+    c1.setX(3);
+    c1.setY(4);
+
+    c2.setX(5);
+    c2.setY(6);
 
     // 2) Print out the contents of (c1, c2, c3,and c4) using the print
     // function.
+
+    print(c1);
+    print(c2);
+    print(c3);
+    print(c4);
 
     // 3) For all of the following you must implement the functions and write a
     // test statements in the main function to test your implementation.
