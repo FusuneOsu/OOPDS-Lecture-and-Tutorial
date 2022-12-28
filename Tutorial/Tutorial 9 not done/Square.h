@@ -4,14 +4,16 @@
 #include <string>
 #include "Shape.h"
 using namespace std;
-class Square:public Shape{
-int side;
+class Square : public Shape
+{
+    int side;
+
 public:
-Square();
-Square(string,int,int,int);
-~Square();
-void draw();
-int getSide();
-void setSide(int);
+    Square();
+    Square(string, int, int, int);
+    ~Square();
+    void draw();
+    int getSide();
+    void setSide(int);
 };
 #endif
