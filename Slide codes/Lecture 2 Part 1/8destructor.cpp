@@ -12,17 +12,18 @@ public:
              << endl;
         side = s;
     }
+    
     ~Square() //destructor
+    {
+        cout << "Destr ..."
+             << endl;
+    }
 
     // 1.Only 1 destructor is allowed per class (i.e., it
     // cannot be overloaded)
     // 2.It is executed automatically when the object goes
     // out of scope
 
-    {
-        cout << "Destr ..."
-             << endl;
-    }
     void setSide(int v)
     {
         side = v;
