@@ -52,6 +52,7 @@ public:
 
     // 4) Write a method named begin() that will return the head of the List.
 
+
     //REWATCH TUTORIAL WEEK 10 TO GET ALL ANSWERS
     //https://drive.google.com/file/d/1JazQ2ZjAYB0-63EaYW946wOnD0-mzMk7/view
 
@@ -75,3 +76,6 @@ lst.push_front(20);
 lst.push_front(10);
 return 0;
 }
+
+// overriding = subclass replaces superclass
+// overloading = two or more functions with the same name but different parameters
