@@ -5,6 +5,7 @@ struct Node
     int data;
     Node *next;
     //contoh aku ada tukar pape dlm ni
+    //sorry doe, aku malas nk setup mic
 };
 int main()
 {
