@@ -4,6 +4,7 @@ struct Node
 {
     int data;
     Node *next;
+    //contoh aku ada tukar pape dlm ni
 };
 int main()
 {
