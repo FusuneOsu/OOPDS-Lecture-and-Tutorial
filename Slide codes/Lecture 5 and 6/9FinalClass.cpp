@@ -22,5 +22,3 @@ A *a = new A();
 a->print();
 return 0;
 }
-
-// PAGE 33 <-Sambung slides
