@@ -1,0 +1,5 @@
+Var int test = 0;
+Var string lol = "hello";
+print lol;
+lol = "world";
+print lol;
