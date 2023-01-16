@@ -3,6 +3,7 @@
 #include <algorithm>
 #include <iterator>
 using namespace std;
+
 int main() {
 const int SIZE = 5;
 array<int, SIZE> a1 {1,2,3,4,5};
