@@ -104,10 +104,12 @@ int PreFix(string &ex)
 int main(){
 
 string exp = "78 6 + 9 2 - /";
+// string exp;
+// getline(cin, exp);
 int value1 = PostFix(exp);
-cout << value1 << endl; //one of these
+cout << "postfix: " << value1 << endl; //one of these
 
 string exp2 = "/ + 78 6 - 9 2";
 int value2 = PreFix(exp2);
-cout << value2 << endl;//is not working
+cout << "prefix: " << value2 << endl;//is not working
 }
