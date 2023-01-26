@@ -7,7 +7,6 @@
 
 using namespace std;
 
-
 template <typename S,typename T> 
 class Var {
     S data_structure_type; //type of the data structure
